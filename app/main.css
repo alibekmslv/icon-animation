@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.privilege {
+  padding: 1rem 0;
+}
+.privilege-heading {
+  text-align: center;
+}
+
+.privilege-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.privilege-icon > div {
+  position: relative;
+  height: 238px;
+  margin: 0 auto;
+}
+
+.privilege-icon:nth-child(2) > div {
+  width: 208px;
+}
+
+.privilege-icon:nth-child(3) > div {
+  width: 167px;
+}
+.privilege-icon h3 {
+  max-width: 270px;
+  text-align: center;
+}
+.icon-phone-small {
+  display: block;
+  position: absolute;
+  background-image: url("images/phone-small.svg");
+  background-size: cover;
+  width: 270px;
+  height: 183px;
+  top: 55px;
+}
+
+.icon-app {
+  display: block;
+  position: absolute;
+  background-image: url("images/app.svg");
+  background-size: cover;
+  width: 95px;
+  height: 155px;
+  top: 0;
+  left: 87px;
+}
+.icon-gift {
+  display: block;
+  position: absolute;
+  background-image: url("images/gift.svg");
+  background-size: cover;
+  width: 143px;
+  height: 191px;
+  right: 0;
+  top: 0;
+}
+.icon-percent {
+  display: block;
+  position: absolute;
+  background-image: url("images/percent.svg");
+  background-size: cover;
+  width: 109px;
+  height: 144px;
+  left: 0;
+  bottom: 0;
+}
+.icon-coffee-cup {
+  display: block;
+  position: absolute;
+  background-image: url("images/coffee-cup.svg");
+  background-size: cover;
+  width: 84px;
+  height: 179px;
+  right: 0;
+  top: 0;
+}
+.icon-star {
+  display: block;
+  position: absolute;
+  background-image: url("images/star.svg");
+  background-size: cover;
+  width: 110px;
+  height: 164px;
+  left: 0;
+  bottom: 0;
+}
+
+.fly {
+  animation: to-fly 3s 100ms infinite ease-in-out;
+}
+
+.fly.delay-2 {
+  animation-delay: 200ms;
+}
+.fly.delay-3 {
+  animation-delay: 300ms;
+}
+.fly.delay-4 {
+  animation-delay: 400ms;
+}
+
+@keyframes to-fly {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
